@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #bfb8db;
+    height: 100%;
+}
+
+.contact{
+    display: grid;
+    grid-auto-flow: row;
+    margin: 10% auto;
+    height: wrap;
+    width: 20%;
+    border-radius: 20px;
+    
+}
+
+
+.bottom-shit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    padding: 10px;
+}
+
+.contact div{
+    font-size: 20px;
+    display: flex; justify-content: center; align-items: center;
+    width:inherit
+}
+
+.contact a:hover{
+    color: #23b843;
+    scale: 10%;
+}
+
+.one{
+    animation-duration: 3s;
+    animation-name: first;
+    animation-iteration-count: 1;
+}
+
+.three{
+    animation-duration: 3s;
+    animation-name: first;
+    animation-iteration-count: 1;
+}
+
+.two{
+    animation-duration: 3s;
+    animation-name: second;
+    animation-iteration-count: 1;
+}
+
+.four{
+    animation-duration: 3s;
+    animation-name: second;
+    animation-iteration-count: 1;
+}
+
+
+.contact{
+    animation-name: rot;
+    animation-duration: 3s;
+}
+
+.hello{
+    display: none;
+}
+
+
+@keyframes rot{
+    from{
+        transform: scale(2);
+        transform: rotate(290deg);
+    }
+    to{
+        transform: scale(1);
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes first{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: -40%;
+        width: 100%;
+      }
+}
+
+@keyframes second{
+    from {
+        margin-right: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: -40%;
+        width: 100%;
+        
+      }
+}
